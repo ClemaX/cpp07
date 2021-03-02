@@ -4,25 +4,25 @@
 using	std::cout;
 using	std::endl;
 
-static void	putChar(char* c)
+static void	putChar(char const* c)
 {
 	cout.put(*c);
 }
 
-static void	putCharUpcase(char* c)
+static void	putCharUpcase(char const* c)
 {
 	cout.put(std::toupper(*c));
 }
 
-static void	timesTen(int* i)
+static void	timesTen(int const* i)
 {
 	cout << *i * 10 << ", ";
 }
 
 int			main()
 {
-	char	charArray[] = {'a', 'b', 'c', 'd', 'e'};
-	int		intArray[] = {0, 1, 2, 3, 4};
+	static const char	charArray[] = {'a', 'b', 'c', 'd', 'e'};
+	static const int	intArray[] = {0, 1, 2, 3, 4};
 
 	cout << "putChar charArray" << endl;
 

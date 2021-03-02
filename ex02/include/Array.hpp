@@ -7,8 +7,8 @@ template<typename T>
 class Array
 {
 private:
-	unsigned				dataSize;
-	T*						data;
+	unsigned	dataSize;
+	T*			data;
 
 public:
 	class	OutOfBoundsException	:	public std::exception
